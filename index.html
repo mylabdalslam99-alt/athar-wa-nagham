@@ -1,72 +1,100 @@
-<!doctype html><html lang="ar" dir="rtl"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>أثر ونغم | التراث والأناشيد</title><meta name="description" content="منصة عربية للتراث والأناشيد والقصائد والحكايات.">
-<link rel="stylesheet" href="style.css"></head><body>
-<header class="top"><nav><a class="brand" href="index.html">أثر <b>ونغم</b></a><button class="hamb" onclick="menu()">☰</button>
-<div id="nav"><a href="#heritage">التراث</a><a href="#songs">الأناشيد</a><a href="#poems">القصائد</a><a href="#stories">حكايات</a><a href="#about">عن الموقع</a></div></nav></header>
-<section class="hero"><div class="hero-inner"><div class="tag">موروثٌ يُروى • ونغمٌ يبقى</div><h1>ذاكرةُ العرب<br><em>بصوت القصيدة</em></h1><p>موقع ثقافي يجمع التراث العربي، الحكايات، الشعر والأناشيد في تجربة واحدة.</p><div><a class="btn" href="#heritage">ابدأ الاكتشاف</a><a class="btn ghost" href="#songs">استمع الآن</a></div></div></section>
-<main>
-<section class="section" id="heritage"><div class="head"><div><small>اكتشف</small><h2>من ذاكرة التراث</h2></div><p>مقالات مبسطة تحفظ الحكاية وتفصل بين التاريخ والأسطورة.</p></div>
-<div class="grid3"><article class="tile"><div class="pic p1">🏺</div><h3>حكايات وأساطير</h3><p>قصص عربية شهيرة، وما لها من جذور تاريخية.</p><a href="heritage.html">استكشف ←</a></article>
-<article class="tile"><div class="pic p2">📜</div><h3>شخصيات تاريخية</h3><p>سير شخصيات صنعت حضوراً في الذاكرة العربية.</p><a href="heritage.html">استكشف ←</a></article>
-<article class="tile"><div class="pic p3">🪶</div><h3>الأمثال والحِكم</h3><p>أمثال عربية ومعانيها وسياقاتها.</p><a href="heritage.html">استكشف ←</a></article></div></section>
-
-<section class="section dark" id="songs"><div class="head"><div><small>استمع</small><h2>الأناشيد</h2></div><p>مساحة لأعمالك الصوتية وكلماتها.</p></div>
-<div class="song-list"><<div class="song-list">
-
-  <article class="song">
-    <div class="cover">♫</div>
-    <div class="songinfo">
-      <h3>حنين إلى الديار</h3>
-      <p>نشيد شعري</p>
-    </div>
-    <audio controls preload="none">
-      <source src="أرج-الطلاب.mp3" type="audio/mpeg">
-    </audio>
-  </article>
-
-  <article class="song">
-    <div class="cover">♫</div>
-    <div class="songinfo">
-      <h3>أطلال وذكريات</h3>
-      <p>قصيدة مغنّاة</p>
-    </div>
-    <audio controls preload="none">
-      <<source src="أرج-المطايا.mp3" type="audio/mpeg">">
-    </audio>
-  </article>
-
-  <article class="song">
-    <div class="cover">♫</div>
-    <div class="songinfo">
-      <h3>أحلام</h3>
-      <p>قصيدة صوتية</p>
-    </div>
-    <audio controls preload="none">
-      <source src="أحلام-ترند-اسمي.mp3" type="audio/mpeg">
-    </audio>
-  </article>
-
-  <article class="song">
-    <div class="cover">♫</div>
-    <div class="songinfo">
-      <h3>نغم</h3>
-      <p>قصيدة مغنّاة</p>
-    </div>
-    <audio controls preload="none">
-      <source src="نغم.mp3" type="audio/mpeg">
-    </audio>
-  </article>
-
-  <article class="song">
-    <div class="cover">♫</div>
-    <div class="songinfo">
-      <h3>يا قمر</h3>
-      <p>أنشودة شعرية</p>
-    </div>
-    <audio controls preload="none">
-      <source src="يا-قمر-(2).mp3" type="audio/mpeg">
-    </audio>
-  </article>
-
+<!DOCTYPE html><html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>أثر ونغم | التراث والقصائد</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#101b22;color:#f5f0e5;line-height:1.8}
+header{background:#182a32;padding:18px;text-align:center;border-bottom:2px solid #bd9855}
+header h1{color:#e4c47b;margin:0;font-size:30px}
+header p{margin:4px;color:#d0c7b5}
+nav{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;padding:15px}
+nav a{color:#e4c47b;text-decoration:none}
+.hero{text-align:center;padding:55px 18px;background:linear-gradient(135deg,#203b42,#111c23)}
+.hero h2{font-size:27px;color:#e4c47b}
+.hero p{max-width:600px;margin:auto}
+section{padding:30px 16px;max-width:900px;margin:auto}
+.section-title{text-align:center;color:#e4c47b;font-size:24px;margin-bottom:22px}
+.card{background:#1d3038;border:1px solid #46565a;border-radius:14px;padding:18px;margin:14px 0;box-shadow:0 5px 15px #0003}
+.card h3{color:#f0d18a;margin-top:0}
+audio{width:100%;margin-top:12px}
+.tag{color:#c9bca4;font-size:14px}
+footer{text-align:center;padding:25px;background:#182a32;color:#d6c8ad;margin-top:30px}
+</style>
+</head>
+<body><header>
+<h1>أثر ونغم</h1>
+<p>ذاكرة التراث وجمال القصيدة</p>
+</header><nav>
+<a href="#home">الرئيسية</a>
+<a href="#heritage">التراث</a>
+<a href="#songs">الأناشيد</a>
+<a href="#poems">القصائد</a>
+<a href="#about">عن الموقع</a>
+</nav><div class="hero" id="home">
+<h2>أهلاً بكم في أثر ونغم</h2>
+<p>مساحة عربية تجمع أصالة التراث، وروعة الشعر، وعذوبة الأناشيد والقصائد المغناة.</p>
+</div><section id="heritage">
+<h2 class="section-title">ذاكرة التراث</h2>
+<div class="card">
+<h3>الحكايات والأمثال</h3>
+<p>نافذة على الذاكرة الشعبية، والحكايات التي تناقلتها الأجيال.</p>
 </div>
+<div class="card">
+<h3>الشعر والهوية</h3>
+<p>مساحة للاحتفاء بالكلمة العربية وجمال التعبير.</p>
+</div>
+</section><section id="songs">
+<h2 class="section-title">الأناشيد والقصائد المغناة</h2><div class="card">
+<h3>حنين إلى الديار</h3>
+<p class="tag">نشيد شعري</p>
+<audio controls preload="none">
+<source src="أرج-المطايا.mp3" type="audio/mpeg">
+</audio>
+</div><div class="card">
+<h3>أطلال وذكريات</h3>
+<p class="tag">قصيدة مغناة</p>
+<audio controls preload="none">
+<source src="أرج-المطايا.mp3" type="audio/mpeg">
+</audio>
+</div><div class="card">
+<h3>أحلام</h3>
+<p class="tag">قصيدة صوتية</p>
+<audio controls preload="none">
+<source src="أحلام-تردد-اسمي.mp3" type="audio/mpeg">
+</audio>
+</div><div class="card">
+<h3>نغم</h3>
+<p class="tag">قصيدة مغناة</p>
+<audio controls preload="none">
+<source src="نغم.mp3" type="audio/mpeg">
+</audio>
+</div><div class="card">
+<h3>يا قمر</h3>
+<p class="tag">أنشودة شعرية</p>
+<audio controls preload="none">
+<source src="يا-قمر (2).mp3" type="audio/mpeg">
+</audio>
+</div><div class="card">
+<h3>لو عودك طيف</h3>
+<p class="tag">قصيدة صوتية</p>
+<audio controls preload="none">
+<source src="لو عودك-طيف.mp3" type="audio/mpeg">
+</audio>
+</div></section><section id="poems">
+<h2 class="section-title">مختارات شعرية</h2>
+<div class="card">
+<h3>الشعر العربي</h3>
+<p>قصائد تحمل الوجدان، والحنين، وجمال اللغة العربية.</p>
+</div>
+</section><section id="about">
+<h2 class="section-title">عن الموقع</h2>
+<div class="card">
+<p>أثر ونغم مشروع ثقافي عربي يهتم بالتراث والشعر والأناشيد والذاكرة الشعبية، ويجمعها في مساحة رقمية واحدة.</p>
+</div>
+</section><footer>
+<p>أثر ونغم © 2026</p>
+<p>التراث حين يُروى، والقصيدة حين تُغنّى.</p>
+</footer></body>
+</html>
